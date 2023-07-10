@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Intero</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="static/home/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="static/home/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="static/home/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="static/home/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="static/home/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <!-- owl stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="static/home/css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="static/home/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="static/home/newstyle.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Fontawesome Link for Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <script src="static/home/newscript.js" defer></script> 
+      
+   </head>
+   <body>
+      <!-- banner bg main start -->
+      <div class="banner_bg_main">
+         <!-- header top section start -->
+         <div class="container">
+            <div class="header_section_top">
+               <div class="row">
+               </div>
+            </div>
+         </div>
+         <!-- header top section start -->
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="#"><img src=""></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="container">
+               <div class="containt_main">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="#">Home</a>
+                     <a href="#">Electronic</a>
+                     {% if admin %}
+                        <a href="/products">Add Products</a>
+                     {% elif logged_in %}
+                        <a href="/logout">Logout</a>
+                        <a href="/myprofile">My Profile</a>
+                     {% else %}
+                        <a href="/login">Login</a>
+                     {% endif %}
+                     <a href="#">About Us</a>
+                     <a href="#">Contact Us</a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="static/home/images/toggle-icon.png"></span>
+                  <div class="dropdown">
+                  </div>
+                  <div class="main">
+                     <!-- Another variation with a button -->
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search this blog">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="lang_box ">
+                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+                        <img src="static/home/images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu ">
+                           <a href="#" class="dropdown-item">
+                           <img src="static/home/images/flag-france.png" class="mr-2" alt="flag">
+                           French
+                           </a>
+                        </div>
+                     </div>
+                     <div class="login_menu">
+                        <ul>
+                           <li><a href="#">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <span class="padding_10">Cart</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header section end -->
+         <!-- banner section start -->
+
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div id="my_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital">Get Start <br>Your favourite shopping</h1>
+                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital">Get Excited Deals &<br> Unique Styles</h1>
+                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital">Save On Fashion <br>Save Fashion</h1>
+                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+            </div>
+            <p>&ensp;</p>
+      <!-- banner bg main end -->
+      <!-- electronic section start -->
+      <div class="fashion_section">
+         <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container"><center>
+                     <h1 class="fashion_taital"><b>Electronic</b></h1></center>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           {% for product in products %}
+                           <div class="col-lg-4 col-sm-4 text-center">
+                              <div class="box_main">
+                                 <h2 class="shirt_text" style="margin-bottom: 5px;">{{ product.pname }}</h2>
+                                 <p class="price_text" style="margin-top: 0;"><span style="color: #262626;">Start Price {{ product.priceofproduct }} &#8377;</span></p>
+                                 <div class="electronic_img" style="position: relative; width: 350px; height: 350px; overflow: hidden;">
+                                 <img src="{{ url_for('static', filename='img/' + product.productImage) }}" alt="Laptop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                                 <img src="{{ product.productImage }}" alt="Laptop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                                 <img src="{{ file_url }}" alt="Product Image" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                                 <div class="img_overlay" style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity 0.3s;"></div>
+                                 <div class="img_overlay" style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity 0.3s;"></div>
+                                 </div>
+                                 <div class="btn_main">
+                                    {% if admin or logged_in %}
+                                    {% if user_in_gamedetails %}
+                                       <button type="button" class="btn btn-success" disabled>Play now</button>
+                                    {% else %}
+                                       <button type="button" class="btn btn-success"><a href="/gamepage">Play now</a></button>
+                                    {% endif %}
+                                    {% else %}
+                                       <button type="button" class="btn btn-success"><a href="/register">Register</a></button>
+                                    {% endif %}
+                                 <div class="seemore_bt">Win more Exciting Gifts On</div>
+                                 </div>
+                                 <button type="button" class="btn btn-primary event-btn">
+                                    <span class="event-date">{{ product.eventdate }}</span>
+                                    <span class="event-time">{{ product.eventtime }}</span>
+                                  </button>
+                              </div>
+                           </div>
+                           {% endfor %} 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         <!--  <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>--> 
+            </a>
+         </div>
+      </div>
+      <p>&ensp;</p>
+      <!-- electronic section end -->
+      <!-- winners page starts -->
+      <section class="section-wrapper">
+         <div class="wrapper">
+           <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+           <ul class="carousel">
+            {% for winner in winners %}
+             <li class="card">
+               <div class="img"><img src="{{ url_for('static', filename='img/' + winner.profileImage) }}" alt="img" draggable="false"></div>
+               <h2>{{ winner.email }}</h2>
+               <span>Smart phone winner</span>
+             </li>
+             {% endfor %}
+             <li class="card">
+               <div class="img"><img src="static/home/images/img-2.jpg" alt="img" draggable="false"></div>
+               <h2>rajesh___@gmail.com</h2>
+               <span>Smart phone winner</span>
+             </li>
+             <li class="card">
+               <div class="img"><img src="static/home/images/img-3.jpg" alt="img" draggable="false"></div>
+               <h2>suresh___@gmail.com</h2>
+               <span>Smart phone winner</span>
+             </li>
+             <li class="card">
+               <div class="img"><img src="static/home/images/img-4.jpg" alt="img" draggable="false"></div>
+               <h2>gajanan___@gmail.com</h2>
+               <span>Smart phone winner</span>
+             </li>
+             <li class="card">
+               <div class="img"><img src="static/home/images/img-5.jpg" alt="img" draggable="false"></div>
+               <h2>srija___@gmail.com</h2>
+               <span>Smart phone winner</span>
+             </li>
+             <li class="card">
+               <div class="img"><img src="static/home/images/img-6.jpg" alt="img" draggable="false"></div>
+               <h2>Donald Horton</h2>
+               <span>App Designer</span>
+             </li>
+           </ul>
+           <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+         </div>
+      </section>
+            <!-- winners page starts -->
+      <!-- About section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">About Us</div>
+                     <p class="about_text">Welcome to our electronic website, your go-to source for cutting-edge tech. At Kinmart e-commerce pvt ltd, we're committed to delivering top-quality electronic products.</p>
+                     <p class="about_text">From smartphones and laptops to smart home devices, we offer a wide range of innovative gadgets to enhance your lifestyle. With competitive prices and reliable service, we prioritize customer satisfaction. Stay connected with us as we bring you the latest advancements in technology.</p>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="static/home/images/about-img.png" width="400"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+  
+      <p>&ensp;</p>
+ 
+      <!-- About section end -->
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+               <img src="static/home/images/contactus.jpg" alt="Image" class="img-fluid" style="height: 300px;">
+            </div>
+            <div class="col-md-6">
+               <form style="width: 500px;">
+                     <h1 class="title text-center mb-4">Talk to Us</h1>
+                     <!-- Name -->
+                     <div class="form-group position-relative">
+                        <label for="formName" class="d-block">
+                           <i class="icon" data-feather="user"></i>
+                        </label>
+                        <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+                     </div>
+                     <!-- E-mail -->
+                     <div class="form-group position-relative">
+                        <label for="formEmail" class="d-block">
+                           <i class="icon" data-feather="mail"></i>
+                        </label>
+                        <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+                     </div>
+                     <!-- Message -->
+                     <div class="form-group message">
+                        <textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
+                     </div>
+                     <!-- Submit btn -->
+                     <div class="text-center">
+                        <button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
+                     </div>
+                  <!-- Form content -->
+               </form>
+            </div>
+         </div>
+      </div>
+</div>
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://unpkg.com/feather-icons'></script><script  src="./script.js"></script>
+<!-- Contact us end -->
+ <p>&ensp;</p>
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src=""></a></div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
+            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  {% if logged_in %}
+                  <li><a href="/logout">Logout</a></li>
+                  {% else %}
+                  <li><a href="/login">Login</a></li>
+                  {% endif %}
+               </ul>
+            </div>
+            <div class="location_main">Help Line  Number : <a href="#">+91 9701655633</a></div>
+         </div>
+      </div>
+      
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">© 2023 All Rights Reserved. Design by <a href="https://www.kinmart.in/">Kinmart e-commerce pvt ltd</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="static/home/js/jquery.min.js"></script>
+      <script src="static/home/js/popper.min.js"></script>
+      <script src="static/home/js/bootstrap.bundle.min.js"></script>
+      <script src="static/home/js/jquery-3.0.0.min.js"></script>
+      <script src="static/home/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="static/home/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="static/home/js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+      </script>
+   </body>
+</html>

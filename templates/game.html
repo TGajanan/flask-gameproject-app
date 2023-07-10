@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="static/game/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="news-container">
+      <div class="title">
+          ALERT!!
+      </div>
+      <ul>
+          <li style="color:white;"</li>
+              Important Notice: Please be aware that if you fail to click within the 20-second playtime, the card will be automatically opened in a random manner
+              <!-- The User Does Not Click Within The 20 Seconds Play Time, The Card Will Be Automatically And Randomly Opened.           -->
+        </li>
+      </ul>
+  </div><br><br>
+  <div class="container">
+    <div class="flex-container topspace">
+      <div class="flex-box flip-box Box1">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="static/game/images/kinmart-logo.jpg" alt="">
+            <h2></h2>
+          </div>
+          <div class="flip-box-back">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex-box flip-box Box2">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="static/game/images/kinmart-logo.jpg" alt="">
+            <h2></h2>
+          </div>
+          <div class="flip-box-back">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex-box flip-box Box3">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="static/game/images/kinmart-logo.jpg" alt="">
+            <h2></h2>
+          </div>
+          <div class="flip-box-back">
+            <h2></h2>
+           
+          </div>
+        </div>
+      </div>
+      <div class="flex-box flip-box Box4">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="static/game/images/kinmart-logo.jpg" alt="">
+            <h2></h2>
+          </div>
+          <div class="flip-box-back">
+            <h2></h2>
+           
+          </div>
+        </div>
+      </div>
+      <div class="flex-box flip-box Box5">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="static/game/images/kinmart-logo.jpg" alt="">
+            <h2></h2>
+          </div>
+          <div class="flip-box-back">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex-box flip-box Box6">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="static/game/images/kinmart-logo.jpg" alt="">
+            <h2></h2>
+          </div>
+          <div class="flip-box-back">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="buttonplay">
+        <button type="button" class="btn btn-outline-danger fw-bold custom-btn" id="start-btn" onclick="startGame()" {% if is_game_finished %}disabled{% endif %}>Start Game</button>
+        <button type="button" class="btn btn-outline-danger fw-bold custom-btn" style="color: #FF0000;"><a href="/logout" style="color: inherit; text-decoration: none;">Logout</a></button>
+        <div id="winnersCount"></div>
+      </div>
+    </div>
+    <div class="leaderboard">
+        <h1 class="leaderboard-title">LEADERBOARD</h1>
+        <div class="d-flex flex-column justify-content-center w-100 h-100">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <!-- <div class="btn-group my-2">  Adjusted the margin -->
+              <div class="side-box">
+                <div class="leaderboard-column">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="game-id">Game ID</th>
+                        <th class="username">Game Level</th>
+                        <th class="rank">Clicked on</th>
+                        <th class="rank">Card Position</th>
+                        <th class="rank">Winner Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for gamedetail in gamedetails %}
+                      <tr>
+                        <td>{{ gamedetail.user_id[:6] }}</td>
+                        <td>{{ gamedetail.gamelevel }}</td>
+                        <td>{{ gamedetail.index }}</td>
+                        <td>{{ gamedetail.flipped_values }}</td>
+                        <td>{% if gamedetail.winner %}WIN{% else %}LOSE{% endif %}</td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                  <!-- <span class="game-id">Game ID</span>
+                  <span class="username">Username</span>
+                  <span class="rank">Rank</span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const flipBoxes = document.querySelectorAll('.flip-box');
+    let selectedFlipBox = null;
+    let isGameFinished = false;
+    let gameStarted = false;
+  
+    function flipBoxClick() {
+      // Check if a flip box is already selected or the game is finished
+      if (selectedFlipBox || isGameFinished) {
+        // If a flip box is already selected or the game is finished, do nothing
+        return;
+      }
+      // Store the reference to the clicked flip box
+      selectedFlipBox = this;
+      // Add a class to indicate selection (e.g., 'selected')
+     // selectedFlipBox.classList.add('selected');
+      // Toggle the 'flip' class to trigger the flipping animation
+      this.classList.toggle('flip');
+      // Get the index of the selected flip box
+      const index = Array.from(flipBoxes).indexOf(selectedFlipBox);
+      // Send an AJAX POST request to the shuffle route
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', `/shuffle/{{ session.level }}/${index}`, true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          const response = JSON.parse(xhr.responseText);
+          const shuffledArray = response.shuffled_array;
+          const flippedValue = shuffledArray[index];
+  
+          // Update the flip box content based on the flipped value
+          const flipBoxFront = selectedFlipBox.querySelector('.flip-box-front');
+          const flipBoxBack = selectedFlipBox.querySelector('.flip-box-back');
+  
+          if (flippedValue === 'in') {
+            flipBoxFront.style.display = 'none';
+            flipBoxBack.style.display = 'block';
+            flipBoxBack.innerHTML = '<h2>In</h2>';
+          } else if (flippedValue === 'out') {
+            flipBoxFront.style.display = 'none';
+            flipBoxBack.style.display = 'block';
+            flipBoxBack.innerHTML = '<h2>Out</h2>';
+          }
+          // Freeze all other flip boxes
+          flipBoxes.forEach((flipBox) => {
+            if (flipBox !== selectedFlipBox) {
+              flipBox.removeEventListener('click', flipBoxClick);
+            }
+          });
+          // Update step wizard
+          const stepElements = document.querySelectorAll('.step-wizard-item');
+          const currentStep = response.current_step;
+          stepElements.forEach((stepElement, i) => {
+            if (i + 1 === currentStep) {
+              stepElement.classList.add('current-item');
+            }
+          });
+  
+          // Display winners count
+          const winnersCountElement = document.getElementById('winnersCount');
+          const winnersCount = response.winners ? response.winners.length : 0;
+          winnersCountElement.textContent = winnersCount + ' winners';
+  
+          // Check if the game is finished
+          if (response.winner) {
+            isGameFinished = true;
+            if (currentStep < 3) {
+              setTimeout(function () {
+                if (confirm('Congratulations! You cleared level ' + currentStep + '. Proceed to level ' + (currentStep + 1) + '.')) {
+                  window.location.href = '/next-level'; // Redirect to the next level
+                } else {
+                  window.location.href = '/gamepage';
+                }
+              }, 100);
+            } else {
+              setTimeout(function () {
+                alert('Congratulations! You cleared all levels. You are the ultimate winner!');
+                window.location.href = '/gamepage';
+              }, 100);
+            }
+          } else {
+            if (currentStep < 3) {
+              setTimeout(function () {
+                alert('Better luck next time! You are not cleared this level ' + currentStep + '.');
+              }, 100);
+            } else {
+              setTimeout(function () {
+                alert('Better luck next time! You are not cleared this level ' + currentStep + '.');
+              }, 100);
+            }
+          }
+        }
+      };
+  
+      xhr.send();
+    }
+  
+    function autoFlipBox() {
+      // Check if a flip box is already selected or the game is finished
+      if (selectedFlipBox || isGameFinished) {
+        // If a flip box is already selected or the game is finished, do nothing
+        return;
+      }
+  
+      // Get a random index for the flip box
+      const index = Math.floor(Math.random() * flipBoxes.length);
+      const randomFlipBox = flipBoxes[index];
+  
+      // Simulate a click event on the randomly selected flip box
+      randomFlipBox.click();
+    }
+  
+    function startGame() {
+        if (gameStarted || isGameFinished) {
+          return;
+        }
+      
+        gameStarted = true;
+        // Disable the start button
+        const startButton = document.getElementById('start-btn');
+        startButton.disabled = true;
+      
+        // Add event listeners to flip boxes
+        flipBoxes.forEach((flipBox) => {
+          flipBox.addEventListener('click', flipBoxClick);
+        });
+      
+        // Start the automatic flipping after 20 seconds
+        setTimeout(autoFlipBox, 20000);
+      }
+      // Call this function when the user clears all levels
+    function handleGameCompletion() {
+        isGameFinished = true;
+        const startButton = document.getElementById('start-btn');
+        startButton.disabled = true;
+    }
+  </script>
+  <!-- Rest of your HTML code -->
+  <!--<script src="static/game/app.js"></script> -->
+</body>
+</html>
+  <!-- <script>
+    const flipBoxes = document.querySelectorAll('.flip-box');
+
+    flipBoxes.forEach((flipBox) => {
+      const flipBoxInner = flipBox.querySelector('.flip-box-inner');
+      let isFlipped = false;
+
+      flipBox.addEventListener('click', function () {
+        if (isFlipped) {
+          flipBoxInner.style.transform = 'rotateY(0deg)';
+        } else {
+          flipBoxInner.style.transform = 'rotateY(180deg)';
+        }
+
+        isFlipped = !isFlipped;
+      });
+    });
+
+    const FULL_DASH_ARRAY = 283;
+    const WARNING_THRESHOLD = 10;
+    const ALERT_THRESHOLD = 5;
+
+    const COLOR_CODES = {
+      info: {
+        color: "green"
+
+      },
+      warning: {
+        color: "orange",
+        threshold: WARNING_THRESHOLD
+      },
+      alert: {
+        color: "red",
+        threshold: ALERT_THRESHOLD
+      }
+    };
+
+    const TIME_LIMIT = 20;
+    let timePassed = 0;
+    let timeLeft = TIME_LIMIT;
+    let timerInterval = null;
+    let remainingPathColor = COLOR_CODES.info.color;
+
+    document.getElementById("app").innerHTML = `
+<div class="base-timer">
+  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g class="base-timer__circle">
+      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+      <path
+        id="base-timer-path-remaining"
+        stroke-dasharray="283"
+        class="base-timer__path-remaining ${remainingPathColor}"
+        d="
+          M 50, 50
+          m -45, 0
+          a 45,45 0 1,0 90,0
+          a 45,45 0 1,0 -90,0
+        "
+      ></path>
+    </g>
+  </svg>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+      timeLeft
+    )}</span>
+</div>
+`;
+
+    startTimer();
+
+    function onTimesUp() {
+      clearInterval(timerInterval);
+    }
+
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        timePassed = timePassed += 1;
+        timeLeft = TIME_LIMIT - timePassed;
+        document.getElementById("base-timer-label").innerHTML = formatTime(
+          timeLeft
+        );
+        setCircleDasharray();
+        setRemainingPathColor(timeLeft);
+
+        if (timeLeft === 0) {
+          onTimesUp();
+        }
+      }, 1000);
+    }
+
+    function formatTime(time) {
+      const minutes = Math.floor(time / 60);
+      let seconds = time % 60;
+
+      if (seconds < 10) {
+        seconds = `0${seconds}`;
+      }
+
+      return `${minutes}:${seconds}`;
+    }
+
+    function setRemainingPathColor(timeLeft) {
+      const { alert, warning, info } = COLOR_CODES;
+      if (timeLeft <= alert.threshold) {
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.remove(warning.color);
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.add(alert.color);
+      } else if (timeLeft <= warning.threshold) {
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.remove(info.color);
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.add(warning.color);
+      }
+    }
+
+    function calculateTimeFraction() {
+      const rawTimeFraction = timeLeft / TIME_LIMIT;
+      return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+    }
+
+    function setCircleDasharray() {
+      const circleDasharray = `${(
+        calculateTimeFraction() * FULL_DASH_ARRAY
+      ).toFixed(0)} 283`;
+      document
+        .getElementById("base-timer-path-remaining")
+        .setAttribute("stroke-dasharray", circleDasharray);
+    } -->
+
+
+  <!-- </script> -->
+
