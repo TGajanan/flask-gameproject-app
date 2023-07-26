@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Leaderboard UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/leader/css/style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container {
+            margin-top: 50px;
+        }
+    
+        .table {
+            margin-top: 20px;
+            width: 100%; /* Set the table width to 100% */
+        }
+    
+        /* Adjust the table columns for mobile view */
+        @media (max-width: 767px) {
+            .table th,
+            .table td {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+	<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2> <a href="/">Winners List</a></h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Photo&Email</th>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>State</th>
+                            <th>In Count</th>
+                            <th>Date & Time</th>
+                            <th>Wishes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for winner in winners %}
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="{{ url_for('static', filename='img/' + winner.profileImage) }}" class="circle-img circle-img--small mr-2" alt="User Img">
+                                    <div class="user-info__basic">
+                                        <p class="text-muted mb-0">{{ winner.email[:4] }}.....{{ winner.email.split('@')[1] }}</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-baseline">
+                                    <h4 class="mr-1"><h5 class="mb-0">{{ winner.fname }}</h5></h4>
+                                </div>
+                            </td>
+                            <td>{{ winner.mobile_number[0:5] }}.....</td>
+                            <td>{{ winner.state }}</td>
+                            <td>{{ winner.winner_count  }}</td>
+                            <td>{{ winner.timestamp }}</td>
+                            <td>
+                                <button class="btn btn-success btn-sm">Congratulate</button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

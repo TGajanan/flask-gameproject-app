@@ -1,0 +1,348 @@
+2023-07-25 18:00:21,248 [17996] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2023-07-25 18:00:21,248 [17996] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2023-07-25 18:00:21,249 [17996] INFO     root:247: [JupyterRequire] Initializing comms.
+2023-07-25 18:00:21,252 [17996] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2023-07-25 18:00:21,253 [17996] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2023-07-25 18:00:21,254 [17996] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2023-07-25 18:00:21,788 [17996] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2023-07-25 18:00:21,788 [17996] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2023-07-25 18:00:21,826 [17996] INFO     root:247: [JupyterRequire] Initializing comms.
+2023-07-25 18:00:21,830 [17996] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2023-07-25 18:00:21,831 [17996] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2023-07-25 18:00:21,832 [17996] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2023-07-25 18:02:37,164 [17996] INFO     numexpr.utils:160: [JupyterRequire] NumExpr defaulting to 8 threads.
+2023-07-25 18:08:05,877 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:05,877 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:05,877 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:05,897 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:05,898 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:05,898 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:05,920 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:08:05,921 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:08:05,932 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:05,933 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:05,933 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:05,935 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:08:06,223 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:08:06,237 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:08:06,238 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:08:06,238 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:08:06,259 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:08:06,260 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:08:06,272 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:08:06,273 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:08:06,274 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:08:06,274 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:08:06,275 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:08:06,275 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:08:06,297 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:08:06,297 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:08:06,298 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:08:06,298 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:08:06,299 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:08:06,299 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:08:06,377 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:06,377 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:06,378 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:06,378 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:08:06,379 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:08:06,411 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:06,412 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:06,412 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:06,413 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:06,413 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:06,413 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:06,413 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:08:06,414 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:08:06,414 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:08:06,414 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:08:06,455 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:08:06,456 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:08:06,457 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:08:06,457 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:08:06,457 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,118 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,118 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,119 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,121 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:10:40,172 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,172 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,172 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,174 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:10:40,181 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:10:40,182 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:10:40,182 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:10:40,183 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:10:40,183 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:10:40,183 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,187 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,188 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,188 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,188 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:10:40,188 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,204 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:10:40,205 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:10:40,205 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:10:40,205 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:10:40,206 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:10:40,207 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,312 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,312 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,313 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,313 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:10:40,313 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,355 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,355 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,355 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,356 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,357 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,357 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:10:40,356 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,358 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:10:40,358 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:10:40,359 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:10:40,359 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,359 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:10:40,359 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:10:40,360 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:10:40,361 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,758 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,758 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,759 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,760 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:06,766 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,767 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,767 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,770 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:06,776 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,776 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,776 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,779 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:06,808 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:06,809 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:06,809 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:06,810 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:06,811 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:06,811 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,819 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:06,820 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:06,820 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:06,821 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:06,821 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:06,822 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,840 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:06,841 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:06,842 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:06,842 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:06,843 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:06,843 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,942 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,943 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,943 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,943 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:06,944 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,968 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,968 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,968 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,969 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:06,969 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,991 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,992 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,992 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,993 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:06,993 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:06,995 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:06,995 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:06,996 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:06,996 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:06,997 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,351 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,352 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,352 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,355 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:27,356 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,356 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,357 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,357 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,360 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:27,360 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,361 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,363 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:27,384 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:27,385 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:27,385 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:27,385 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:27,386 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:27,386 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:27,387 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:27,388 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:27,388 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:27,389 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:27,389 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:27,389 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:27,390 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:27,390 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,391 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:27,391 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:27,392 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,392 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,511 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,511 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,511 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,512 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:27,512 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,514 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,514 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,515 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,515 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:27,515 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,521 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,521 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,522 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,522 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:27,522 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:27,552 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:27,553 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:27,553 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:27,554 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:27,554 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,492 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,492 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,492 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,494 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:37,498 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,498 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,499 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,500 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:37,509 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,509 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,509 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,511 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:13:37,522 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:37,523 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:37,523 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:37,524 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:37,524 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:37,524 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:37,525 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:37,525 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:37,526 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:37,526 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:37,526 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,527 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,537 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:13:37,538 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:13:37,538 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:13:37,538 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:13:37,539 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:13:37,539 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,655 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,655 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,656 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,656 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:37,656 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,663 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,663 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,664 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,664 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:37,665 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,669 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,669 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,670 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,670 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:37,671 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:13:37,679 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:13:37,680 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:13:37,680 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:13:37,680 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:13:37,681 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:58,988 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:58,989 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:58,989 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:58,992 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:17:59,067 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:17:59,069 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:17:59,069 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:17:59,070 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:17:59,070 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:17:59,071 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:59,123 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:59,124 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:59,124 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:59,124 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:59,125 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:59,125 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:59,125 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:17:59,125 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:17:59,125 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:59,126 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:59,202 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:59,202 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:59,203 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:59,203 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:17:59,204 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:59,249 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:59,249 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:59,250 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:59,250 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:17:59,250 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:59,289 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:59,289 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:17:59,289 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:59,289 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:17:59,290 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:59,290 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:17:59,291 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:17:59,291 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:17:59,291 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:17:59,292 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,579 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,580 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,581 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,583 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:18:18,586 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,587 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,588 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,590 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:18:18,592 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,593 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,593 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,595 [17996] DEBUG    urllib3.connectionpool:228: [JupyterRequire] Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-07-25 18:18:18,601 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:18:18,601 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:18:18,601 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:18:18,602 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:18:18,603 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:18:18,603 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,604 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:18:18,605 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:18:18,606 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:18:18,606 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:18:18,607 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:18:18,607 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,609 [17996] DEBUG    urllib3.connectionpool:456: [JupyterRequire] http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-07-25 18:18:18,610 [17996] DEBUG    pymongo.ocsp_support:258: [JupyterRequire] OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2023-07-25 18:18:18,610 [17996] DEBUG    pymongo.ocsp_support:214: [JupyterRequire] Verifying response
+2023-07-25 18:18:18,611 [17996] DEBUG    pymongo.ocsp_support:159: [JupyterRequire] Responder is issuer
+2023-07-25 18:18:18,611 [17996] DEBUG    pymongo.ocsp_support:271: [JupyterRequire] Caching OCSP response.
+2023-07-25 18:18:18,612 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,720 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,720 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,721 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,721 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:18:18,721 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,724 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,724 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,725 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,725 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:18:18,725 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,756 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,756 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,757 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,757 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:18:18,758 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2023-07-25 18:18:18,758 [17996] DEBUG    pymongo.ocsp_support:309: [JupyterRequire] Peer did not staple an OCSP response
+2023-07-25 18:18:18,759 [17996] DEBUG    pymongo.ocsp_support:335: [JupyterRequire] Requesting OCSP data
+2023-07-25 18:18:18,759 [17996] DEBUG    pymongo.ocsp_support:339: [JupyterRequire] Trying http://r3.o.lencr.org
+2023-07-25 18:18:18,760 [17996] DEBUG    pymongo.ocsp_support:238: [JupyterRequire] Using cached OCSP response.
+2023-07-25 18:18:18,761 [17996] DEBUG    pymongo.ocsp_support:346: [JupyterRequire] OCSP cert status: <OCSPCertStatus.GOOD: 0>
